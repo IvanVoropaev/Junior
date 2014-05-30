@@ -1,0 +1,7 @@
+label.name=Name
+label.address=Address
+label.city=City
+label.state=State
+label.zip=ZIP
+label.country=Country
+label.email=email
