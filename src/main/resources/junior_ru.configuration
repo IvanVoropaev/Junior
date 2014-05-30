@@ -1,0 +1,7 @@
+label.name=Имя
+label.address=Адрес
+label.city=Город
+label.state=Штат
+label.zip=ZIP-код
+label.country=Страна
+label.email=Электронная почта
