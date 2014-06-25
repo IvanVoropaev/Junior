@@ -10,6 +10,8 @@ public interface CustomerDAO {
 	
 	public List<Customer> listCustomer();
 	
+	public Customer customerById(Integer id);
+	
 	public void removeCustomer(Integer id);
 
 }

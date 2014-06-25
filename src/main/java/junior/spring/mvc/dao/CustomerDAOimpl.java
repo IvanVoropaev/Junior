@@ -26,6 +26,14 @@ public class CustomerDAOimpl implements CustomerDAO {
 		// TODO Auto-generated method stub
 		return sessionFactory.getCurrentSession().createQuery("from Customer").list();
 	}
+	
+	@Override
+	public Customer customerById(Integer id) {
+		return (Customer) sessionFactory.getCurrentSession()
+				                        .createQuery("from Customer customer where customer.id = :id")
+										.setInteger("id", id)
+										.uniqueResult();
+	}
 
 	@Override
 	public void removeCustomer(Integer id) {
